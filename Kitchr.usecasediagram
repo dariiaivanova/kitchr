@@ -1,0 +1,136 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<useCaseModelRoot xmlns:dm0="http://schemas.microsoft.com/VisualStudio/2008/DslTools/Core" xmlns:dm1="http://schemas.microsoft.com/dsltools/Kernel" xmlns:dm2="http://schemas.microsoft.com/dsltools/Component" xmlns:dm3="http://schemas.microsoft.com/dsltools/UseCase" xmlns:dm4="http://schemas.microsoft.com/dsltools/Activity" xmlns:dm5="http://schemas.microsoft.com/dsltools/Interaction" xmlns:dm6="http://schemas.microsoft.com/dsltools/UmlModelLibrary" xmlns:dm7="http://schemas.microsoft.com/dsltools/UmlDiagrams" xmlns:dm8="http://schemas.microsoft.com/dsltools/ModelStore" xmlns:dm9="http://schemas.microsoft.com/dsltools/SimpleShapesModel" dslVersion="1.0.0.0" Id="fc3f25f5-7d46-4825-9acb-2ac6670594ff" name="Kitchr" linkedPackageId="ed5cd3dc-da96-4fee-80cd-7c510e1d1c75" xmlns="http://schemas.microsoft.com/dsltools/UseCaseModel">
+  <profileInstances>
+    <packageHasProfileInstances Id="041dbd73-3e34-4c5f-974b-43c93203cf9a">
+      <profileInstance Id="1fc100b1-5767-473d-bc8a-8838145e1df6" name="StandardProfileL2">
+        <elementDefinition Id="e34d544e-0fea-4ed6-ac5e-1b74119ac791" />
+      </profileInstance>
+      <elementDefinition Id="0caec977-1f8c-4ba3-a7db-8cc9ad9cc73b" />
+    </packageHasProfileInstances>
+    <packageHasProfileInstances Id="4eadaaf9-137f-4e1d-aa1e-59f198f4c7a8">
+      <profileInstance Id="74fb7588-04a8-4e15-beb9-97c35b2adc29" name="StandardProfileL3">
+        <elementDefinition Id="532ea607-fb19-44b8-8502-3351b05452be" />
+      </profileInstance>
+      <elementDefinition Id="29349502-908c-4fda-9054-c48619c59ed0" />
+    </packageHasProfileInstances>
+  </profileInstances>
+  <packagedElements>
+    <useCaseModelRootHasTypes>
+      <subsystem Id="c301af99-b998-4ca8-8757-a0e54f5b720c" name="Kitchr" isAbstract="false" isLeaf="false" isActiveClass="false">
+        <elementDefinition Id="0bd2a869-5b02-47c6-bbf1-c6a031772934" />
+      </subsystem>
+    </useCaseModelRootHasTypes>
+    <useCaseModelRootHasTypes>
+      <actor Id="503a7d9b-8869-43da-abd9-f527fc8d248d" name="User" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="747d43d6-e8e9-4ea9-8acd-2281ff078fce" />
+        <targetEnds>
+          <association Id="52f4973f-538f-4087-93cd-8c50e5d11c23" isDerived="false" sourceEndRoleName="User" targetEndRoleName="Get menu" isLeaf="false" isAbstract="false">
+            <useCaseMoniker Id="aae76f42-8ae4-419e-a6b8-72e10b0191ef" LastKnownName="Get menu" />
+            <relationshipOwnedElementsInternal>
+              <associationHasOwnedEnds>
+                <memberEnd Id="de13bda6-3907-45f7-9489-4b7a54a25115" name="User" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false" isNavigableOwned="false">
+                  <elementDefinition Id="973218ec-1ba5-49d7-ae6d-ce44ee862087" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+              <associationHasOwnedEnds>
+                <memberEnd Id="98adb970-406b-4c4c-99f9-d18412f29947" name="Get menu" isLeaf="false" isStatic="false" isReadOnly="false" isDerived="false" isDerivedUnion="false" aggregation="None" isComposite="false">
+                  <elementDefinition Id="a3db2372-e26a-4ecd-a254-739257aff66a" />
+                </memberEnd>
+              </associationHasOwnedEnds>
+            </relationshipOwnedElementsInternal>
+            <elementDefinition Id="0f0d8a69-8095-4b1f-bf6f-1dbe202d1f47" />
+          </association>
+        </targetEnds>
+      </actor>
+    </useCaseModelRootHasTypes>
+    <packageHasNamedElement>
+      <useCase Id="aae76f42-8ae4-419e-a6b8-72e10b0191ef" name="Get menu" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="71a8c562-1092-4bec-b4e3-b0accc67b8ce" />
+        <extendedCases>
+          <extend Id="6a2303b6-4e32-4e90-ac0e-7734af503b7c">
+            <useCaseMoniker Id="f6c82387-6668-401b-a752-1633f6ac82e8" LastKnownName="Get shopping list" />
+            <elementDefinition Id="4dd825d1-6077-4204-9db5-8562f71efc58" />
+          </extend>
+          <extend Id="929eaa76-2d24-4518-93d3-748512bfec71">
+            <useCaseMoniker Id="cc331984-2249-4e00-b40a-5b40fe4fc8cd" LastKnownName="Add menu restrictions" />
+            <elementDefinition Id="3fe79a42-a229-4427-8438-1bf11356aeab" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="f6c82387-6668-401b-a752-1633f6ac82e8" name="Get shopping list" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="f0113372-8802-4d63-9105-796e526f184d" />
+        <extendedCases>
+          <extend Id="16832b43-0d5c-4fc2-a6ca-2364428273d0">
+            <useCaseMoniker Id="ff3b0d9e-27a5-4b29-bbd1-ea97fbf14cd1" LastKnownName="Get version  for printing" />
+            <elementDefinition Id="7c8e7fd6-928d-44eb-a334-b883b6067425" />
+          </extend>
+        </extendedCases>
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ff3b0d9e-27a5-4b29-bbd1-ea97fbf14cd1" name="Get version  for printing" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="dd410b8e-db74-4ab2-b7a3-6ba4c9f44ddd" />
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="ec093ec0-b248-48c6-b90a-3ccedffde5bc" name="Choose only healthy diet" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="6d6eae5b-f879-4a68-8997-681f13cdae4f" />
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="4cb48b38-8319-4548-a124-a95a740e016d" name="Exclude allergic ingredients" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="68e4345d-6d8e-4c0d-b708-d591337b4c1f" />
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="bff4b4ab-f78f-4936-b44c-4b570c916386" name="Exclude unfav dishes " isAbstract="false" isLeaf="false">
+        <elementDefinition Id="3f4261cd-b0ca-4d7b-ad4b-835b7239bcac" />
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+    <packageHasNamedElement>
+      <useCase Id="cc331984-2249-4e00-b40a-5b40fe4fc8cd" name="Add menu restrictions" isAbstract="false" isLeaf="false">
+        <elementDefinition Id="a5fa6e6e-4020-4f41-8266-6ea83cd3d83c" />
+        <additions>
+          <include Id="4717d668-0fe2-4e64-bb10-ef32a856a9e2">
+            <useCaseMoniker Id="ec093ec0-b248-48c6-b90a-3ccedffde5bc" LastKnownName="Choose only healthy diet" />
+            <elementDefinition Id="d0b5385e-598f-414a-9e7f-6d4f10b4ff0b" />
+          </include>
+          <include Id="9b0c2450-fdbd-4abd-bf71-e7037c2a5d7a">
+            <useCaseMoniker Id="bff4b4ab-f78f-4936-b44c-4b570c916386" LastKnownName="Exclude unfav dishes " />
+            <elementDefinition Id="3c2053ef-5592-4dbf-86d4-473335ef629c" />
+          </include>
+          <include Id="eeed8ea9-f644-49c4-8c74-f9fdc89c176c">
+            <useCaseMoniker Id="4cb48b38-8319-4548-a124-a95a740e016d" LastKnownName="Exclude allergic ingredients" />
+            <elementDefinition Id="82c183c2-7597-4064-9ac8-4411263163c9" />
+          </include>
+        </additions>
+        <subjects>
+          <subsystemMoniker Id="c301af99-b998-4ca8-8757-a0e54f5b720c" LastKnownName="Kitchr" />
+        </subjects>
+      </useCase>
+    </packageHasNamedElement>
+  </packagedElements>
+  <package Id="ed5cd3dc-da96-4fee-80cd-7c510e1d1c75" name="KitchrModeling">
+    <elementDefinition Id="de274ca9-871d-4807-be56-10785007c5af" />
+  </package>
+</useCaseModelRoot>
